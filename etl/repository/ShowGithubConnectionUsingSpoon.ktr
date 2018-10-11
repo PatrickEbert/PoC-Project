@@ -438,7 +438,7 @@
   <order>
     <hop>
       <from>Data Grid</from>
-      <to>Dummy (do nothing)</to>
+      <to>Add constants</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -465,10 +465,26 @@
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
       </field>
+      <field>
+        <name>Column2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <data>
       <line>
         <item>This is my first line</item>
+        <item>Another Column</item>
+      </line>
+      <line>
+        <item>and a second line</item>
+        <item>to show changes</item>
       </line>
     </data>
     <cluster_schema/>
@@ -485,8 +501,8 @@
     </GUI>
   </step>
   <step>
-    <name>Dummy (do nothing)</name>
-    <type>Dummy</type>
+    <name>Add constants</name>
+    <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -495,6 +511,20 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <fields>
+      <field>
+        <name>ConstCol1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>A first constant column</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -503,7 +533,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>336</xloc>
       <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
