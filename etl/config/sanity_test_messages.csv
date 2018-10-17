@@ -1,7 +1,7 @@
-;1200;
-;1200;
-;1310;
-;1000;
-;1320;
-;1100;
-;1100;
+20181015162723;1200;Property "SOURCE_MESSAGE_QUEUE_CONNECTION" found in environment "dev" is not described in the kettle_properties_sanity_conf.csv
+20181015162723;1200;Property "SOURCE_MESSAGE_QUEUE_CONNECTION" found in environment "sample_env" is not described in the kettle_properties_sanity_conf.csv
+20181015162723;1310;Property "KETTLE_PROPERTIES_TEST_VARIABLE" varies across different environments
+20181015162723;1000;Environment "uat" does not have kettle.properties
+20181015162723;1320;Property "TARGET_SERVER" has the value "londonBridge:8080" in the following environments: dev, sample_env
+20181015162723;1100;Property "TARGET_DATABASE" is not specified for environment "dev"
+20181015162723;1100;Property "TARGET_DATABASE" is not specified for environment "sample_env"
